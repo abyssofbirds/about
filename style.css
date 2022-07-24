@@ -1,0 +1,143 @@
+/* * {
+  overflow-y: hidden;
+} */
+
+/* add custom styling to the scrollbar */
+::-webkit-scrollbar {
+  transform: translateY(-10px);
+  width: 24px;
+}
+body {
+  background-color: black;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  display: none;
+}
+
+body {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  height: 100vh;
+  width: 50px;
+  position: absolute;
+  background-color: black;
+  color: white;
+  z-index: 100;
+  transition: width ease-in-out 700ms;
+  font-family: "DejaVuSansMonoBook";
+  font-weight: normal;
+
+  border-right-width: 10px;
+  border-right-style: solid;
+ 
+  border-image: linear-gradient(100deg, rgba(0,145,255,1) 0%, rgba(181,57,245,1) 30%, rgba(255,0,0,1) 67%, rgba(32,235,255,1) 100%);
+}
+
+.header__title {
+  font-size: 18px;
+  font-weight: bold;
+  /* padding: 10px; */
+  margin-bottom: 24px;
+}
+
+.header__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.expanded-header {
+  width: 250px;
+}
+
+.social__title {
+  overflow-x: hidden;
+  width: 0px;
+  transition: width ease-in-out 500ms;
+}
+
+.header__title {
+  white-space: nowrap;
+  transition: opacity ease-in-out 500ms;
+  opacity: 0;
+  font-size: 35px;
+}
+
+.expanded-header .social__title {
+  width: 90%;
+}
+
+.expanded-header .header__title {
+  opacity: 1;
+}
+
+.content {
+  position: relative;
+  flex-grow: 1;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  margin-left: 300px;
+}
+
+.outer-wrapper {
+  width: 103vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  /* padding: 0 auto; */
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* wrapper containing our slides */
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 200vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  overflow-y: hidden;
+}
+
+.one {
+  background: #000000;
+}
+
+.two {
+  background: #a3f3d3;
+}
+
+.social {
+  height: 50px;
+  font-size: 30px;
+}
