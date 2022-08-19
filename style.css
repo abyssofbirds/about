@@ -9,6 +9,8 @@
 }
 body {
   background-color: black;
+  font-family: "DejaVuSansMonoBook";
+  font-weight: normal;
 }
 
 ::-webkit-scrollbar-track {
@@ -42,8 +44,6 @@ body {
   z-index: 100;
   overflow: hidden;
   transition: width ease-in-out 700ms;
-  font-family: "DejaVuSansMonoBook";
-  font-weight: normal;
 
   border-right-width: 10px;
   border-right-style: solid;
@@ -56,6 +56,7 @@ body {
     rgba(32, 235, 255, 1) 100%
   );
   border-image-slice: 1;
+  box-shadow: 11px 1px 15px 5px #000000;
 }
 
 .header__title {
@@ -78,7 +79,7 @@ body {
 }
 
 .expanded-header {
-  width: 25vw;
+  width: 20vw;
 }
 
 .social__title {
@@ -95,6 +96,9 @@ body {
   color: white;
   text-decoration: none;
 }
+.icon:hover {
+  color: #4dbeff;
+}
 
 .header__title {
   white-space: nowrap;
@@ -103,6 +107,8 @@ body {
   font-size: 35px;
   margin: 20px;
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .expanded-header .social__title {
@@ -163,6 +169,7 @@ body {
   height: 80vh;
   display: flex;
   margin: 0 auto;
+  min-height: 730px;
 }
 
 .date {
@@ -191,9 +198,12 @@ container {
   width: 100%;
   border-bottom-width: 10px;
   border-bottom-style: solid;
-  border-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(142, 0, 173));
+  border-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(127, 35, 147));
   border-image-slice: 1;
   height: 40%;
+  display: flex;
+  flex-direction: row;
+  color: white;
 }
 .bottom-left {
   width: 100%;
@@ -203,11 +213,45 @@ container {
   width: 100%;
   border-bottom-width: 10px;
   border-bottom-style: solid;
-  border-image: linear-gradient(90deg, rgb(142, 0, 173), rgb(0, 0, 0));
+  border-image: linear-gradient(90deg, rgb(97, 0, 120), rgb(0, 0, 0));
   border-image-slice: 1;
-  height: 60%;
+  height: 30%;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
 }
 .bottom-right {
   width: 100%;
-  height: 40%;
+  height: 70%;
 }
+
+.job-title {
+  /* display: flex; */
+  margin: 100px 0 0 50px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.about-company{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+  font-size: 30px;
+  padding-left: 20px;
+  text-align: center;
+  margin: auto;
+}
+.about-company:only-child{
+  text-align: center;
+}
+.link-job{
+  font-size: 25px;
+  color: #4dbeff;
+}
+
