@@ -7,6 +7,26 @@ body {
   font-family: "DejaVuSansMonoBook";
   font-weight: normal;
 }
+/* bp 1000 */
+@media screen and (max-width: 1200px) {
+  .content {
+    transform: rotate(90deg) translateX(100vh);
+    margin-top: 0 auto;
+  }
+  .wrapper {
+    transform: rotate(90deg) translateX(100vh);
+  }
+  .main {
+    height: auto;
+  }
+  .header {
+    display: flex;
+    width: auto;
+    border-image: none;
+    position: static;
+  }
+
+}
 
 ::-webkit-scrollbar-track {
   display: none;
@@ -39,7 +59,6 @@ body {
   z-index: 100;
   overflow: hidden;
   transition: width ease-in-out 700ms;
-
   border-right-width: 10px;
   border-right-style: solid;
 
@@ -131,7 +150,6 @@ body {
   border-image: linear-gradient(
     0deg,
     rgba(0, 0, 0, 1) 0%,
-    /* rgb(154, 0, 189) 50%, */
     rgb(255, 255, 255) 50%,
     rgba(0, 0, 0, 1) 100%
   );
@@ -178,15 +196,10 @@ body {
   border-image: linear-gradient(
     0deg,
     rgba(0, 0, 0, 1) 0%,
-    /* rgb(154, 0, 189) 50%, */
-    rgb(255, 255, 255) 50%,
+    /* rgb(154, 0, 189) 50%, */ rgb(255, 255, 255) 50%,
     rgba(0, 0, 0, 1) 100%
   );
   border-image-slice: 1;
-}
-
-.two {
-  background: #000000;
 }
 
 .social {
