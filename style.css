@@ -4,29 +4,9 @@
 }
 body {
   background-color: black;
-  font-family: "DejaVuSansMonoBook";
   font-weight: normal;
 }
-/* bp 1000 */
-@media screen and (max-width: 1200px) {
-  .content {
-    transform: rotate(90deg) translateX(100vh);
-    margin-top: 0 auto;
-  }
-  .wrapper {
-    transform: rotate(90deg) translateX(100vh);
-  }
-  .main {
-    height: auto;
-  }
-  .header {
-    display: flex;
-    width: auto;
-    border-image: none;
-    position: static;
-  }
 
-}
 
 ::-webkit-scrollbar-track {
   display: none;
@@ -105,14 +85,7 @@ body {
   color: #4dbeff;
   font-weight: 300;
 }
-.icon {
-  margin-right: 10px;
-  color: white;
-  text-decoration: none;
-}
-.icon:hover {
-  color: #4dbeff;
-}
+
 
 .header__title {
   white-space: nowrap;
@@ -176,7 +149,6 @@ body {
   position: absolute;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  font-family: "DejaVuSansMonoBook";
 }
 
 /* wrapper containing our slides */
@@ -286,15 +258,7 @@ container {
   margin: auto;
   margin-top: 100px;
 }
-.logo {
-  width: 180px;
-  height: 180px;
-  border-radius: 30px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-}
+
 .about-company:only-child {
   text-align: center;
 }

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       header.classList.toggle("expanded-header", true);
     }
     if (counter === 8) {
-      alert("Please, stop it");
+      // alert("Please, stop it");
       counter = 0;
     }
   });

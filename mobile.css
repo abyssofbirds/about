@@ -1,0 +1,15 @@
+
+.header__body {
+  border-image: linear-gradient(
+    90deg,
+    rgba(0, 145, 255, 1) 0%,
+    rgba(181, 57, 245, 1) 30%,
+    rgba(255, 0, 0, 1) 67%,
+    rgba(32, 235, 255, 1) 100%
+  );
+  border-bottom-width: 10px;
+  border-bottom-style: solid;
+  border-image-slice: 1;
+  padding-bottom: 5px;
+}
+
