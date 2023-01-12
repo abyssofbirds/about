@@ -7,7 +7,6 @@ body {
   font-weight: normal;
 }
 
-
 ::-webkit-scrollbar-track {
   display: none;
 }
@@ -86,7 +85,6 @@ body {
   font-weight: 300;
 }
 
-
 .header__title {
   white-space: nowrap;
   transition: opacity ease-in-out 500ms;
@@ -114,6 +112,16 @@ body {
 .slide {
   width: 100vw;
   height: 100vh;
+  background: #000000;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(255, 255, 255) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  border-image-slice: 1;
 }
 .half-slide {
   width: 50vw;
@@ -155,7 +163,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 250vw;
+  width: 350vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   overflow-y: hidden;
@@ -192,6 +200,7 @@ body {
   margin: 50px 0 50px 0;
 }
 .date span {
+  display: inline-block;
   padding: 0 20px 0 20px;
   border-left: 2px solid rgb(154, 0, 189);
   border-right: 2px solid rgb(154, 0, 189);
@@ -245,7 +254,7 @@ container {
 }
 
 .job-title {
-  margin: 100px 0 0 50px;
+  margin: 100px 0 0 200px;
 }
 .about-company {
   display: flex;
@@ -297,7 +306,6 @@ li a:before {
   border-top: 7px solid transparent;
   border-left: 15px solid #4dbeff;
   border-bottom: 7px solid transparent;
-  /* background:#4dbeff; */
   position: absolute;
   left: -30px;
   top: 4px;
@@ -310,4 +318,15 @@ li a:before {
 }
 .soft-skill {
   margin-top: 30px;
+}
+
+.emoji {
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.info {
+  color: rgb(95, 95, 95);
+  border: none;
 }
