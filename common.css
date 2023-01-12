@@ -1,29 +1,29 @@
-body{
-    font-family: "DejaVuSansMonoBook";
-    background-color: black;
-    color: #fff;
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: black;
+  color: #fff;
 }
 .logo {
-    width: 180px;
-    height: 180px;
-    border-radius: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-  }
-  .icon {
-    margin-right: 10px;
-    color: white;
-    text-decoration: none;
-  }
-  .icon:hover {
-    color: #4dbeff;
-  }
-  .social__title {
-    width: 0px;
-    padding-left: 20px;
-    text-decoration: none;
-    color: #4dbeff;
-    font-weight: 300;
-  }
+  width: 180px;
+  height: 180px;
+  border-radius: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.icon {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+}
+.icon:hover {
+  color: #4dbeff;
+}
+.social__title {
+  width: 0px;
+  padding-left: 20px;
+  text-decoration: none;
+  color: #4dbeff;
+  font-weight: 300;
+}

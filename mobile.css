@@ -140,3 +140,10 @@ li a {
   align-items: center;
   margin-left: 15px;
 }
+.projects {
+  display: flex;
+  justify-content: center;
+  color: rgba(181, 57, 245, 1);
+  font-size: 30px;
+  margin-bottom: 15px;
+}

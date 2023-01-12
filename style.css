@@ -33,7 +33,7 @@ body {
   height: 100vh;
   width: 80px;
   position: absolute;
-  background-color: black;
+  /* background-color: black; */
   color: white;
   z-index: 100;
   overflow: hidden;
@@ -41,14 +41,21 @@ body {
   border-right-width: 10px;
   border-right-style: solid;
 
+  background: linear-gradient(
+    180deg,
+    rgb(0, 145, 255) 0%,
+    rgba(181, 57, 245, 1) 30%,
+    rgb(255, 62, 62) 67%,
+    rgb(0, 178, 194) 100%
+  );
   border-image: linear-gradient(
     180deg,
-    rgba(0, 145, 255, 1) 0%,
-    rgba(181, 57, 245, 1) 30%,
+    rgb(0, 94, 167) 0%,
+    rgb(170, 0, 255) 30%,
     rgba(255, 0, 0, 1) 67%,
-    rgba(32, 235, 255, 1) 100%
+    rgb(0, 198, 216) 100%
   );
-  border-image-slice: 1;
+  border-image-slice: 0;
   box-shadow: 11px 1px 15px 5px #000000;
 }
 
@@ -78,12 +85,36 @@ body {
 .social__title {
   overflow-x: hidden;
   width: 0px;
-  transition: width ease-in-out 500ms;
   padding-left: 20px;
   text-decoration: none;
-  color: #4dbeff;
+  color: white;
   font-weight: 300;
 }
+.social__title {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.social__title::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  padding-left: 50px;
+}
+
+.social__title:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 
 .header__title {
   white-space: nowrap;
@@ -126,7 +157,8 @@ body {
 .half-slide {
   width: 50vw;
   margin-left: 200px;
-  border-right-width: 3px;
+  margin-right: -100px;
+  /* border-right-width: 3px;
   border-right-style: solid;
   border-image: linear-gradient(
     0deg,
@@ -134,7 +166,7 @@ body {
     rgb(255, 255, 255) 50%,
     rgba(0, 0, 0, 1) 100%
   );
-  border-image-slice: 1;
+  border-image-slice: 1; */
 }
 .half-slide h2 {
   color: white;
@@ -163,7 +195,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 350vw;
+  width: 370vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   overflow-y: hidden;
@@ -171,7 +203,7 @@ body {
 
 .one {
   background: #000000;
-  border-right-width: 3px;
+  border-right-width: 1px;
   border-right-style: solid;
   border-image: linear-gradient(
     0deg,
@@ -311,7 +343,7 @@ li a:before {
   top: 4px;
 }
 .bottom-right ul li {
-  margin-left: -50px;
+  margin-left: -100px;
 }
 .half-slide ul li {
   font-size: 20px;
@@ -329,4 +361,24 @@ li a:before {
 .info {
   color: rgb(95, 95, 95);
   border: none;
+}
+
+.projects {
+  /* display: block; */
+  font-size: 70px;
+  transform: rotate(-90deg);
+  /* width: fit-content;
+  height: fit-content; */
+  align-self: center;
+  margin-right: -80px;
+  font-weight: 800;
+  background: -webkit-linear-gradient(
+    180deg,
+    rgb(189, 108, 241) 0%,
+    /* rgb(170, 0, 255) 30%, */ rgba(255, 0, 0, 1) 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 80px;
 }
