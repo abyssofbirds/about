@@ -90,11 +90,10 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 300;
-  display: inline-flex;
+  display: flex;
   gap: 30px;
 }
 .social__title {
-  display: inline-block;
   position: relative;
   color: white;
 }
