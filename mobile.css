@@ -16,7 +16,7 @@ ul {
   border-bottom-width: 10px;
   border-bottom-style: solid;
   border-image-slice: 1;
-  padding-bottom: 5px;
+  padding: 10px 0 5px 10px;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -35,6 +35,7 @@ ul {
 .header__body {
   display: grid;
   justify-items: end;
+  padding-right: 10px;
 }
 .icon {
   margin-left: 10px;

@@ -18,3 +18,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Get the text field
+const button = document.getElementById("copy-email");
+button.addEventListener("click", (event) => {
+  event.preventDefault();
+  event.stopPropagation();
+  event.stopImmediatePropagation();
+  navigator.clipboard.writeText("deniskind@inbox.ru");
+  const emailEl = document.querySelector(".email-title");
+  emailEl.textContent = "copied";
+  setInterval(() => {
+    emailEl.textContent = "email";
+  }, 5000);
+  
+});
+
+// Alert the copied text

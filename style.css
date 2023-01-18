@@ -76,6 +76,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: 0.25s ease-out;
 }
 
 .expanded-header {
@@ -89,6 +90,8 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 300;
+  display: inline-flex;
+  gap: 30px;
 }
 .social__title {
   display: inline-block;
@@ -97,7 +100,7 @@ body {
 }
 
 .social__title::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 50%;
   transform: scaleX(0);
@@ -114,7 +117,6 @@ body {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
 
 .header__title {
   white-space: nowrap;
